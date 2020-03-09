@@ -21,7 +21,7 @@ html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal i
 .reveal article, .reveal aside, .reveal canvas, .reveal details, .reveal embed,
 .reveal figure, /*.reveal figcaption*/, .reveal footer, .reveal header, .reveal hgroup,
 .reveal menu, .reveal nav, .reveal output, .reveal ruby, .reveal section, .reveal summary,
-.reveal time, .reveal mark, .reveal audio, .reveal video {
+.reveal time, .reveal mark, .reveal audio, .reveal video, .wrapper {
   margin: 0;
   padding: 0;
   border: 0;
@@ -1682,4 +1682,27 @@ html.dimbg .slide-background {
    grid-gap: 10px;
    text-align: left;
 }
-	
+
+.row {
+  display: flex;
+  padding: 20px;
+  text-align : center;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex: 100%;
+  padding: 20px;
+  width: 100%;
+  textalign: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: opx;
+  
+}
+
